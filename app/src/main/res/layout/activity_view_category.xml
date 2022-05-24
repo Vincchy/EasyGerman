@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add words"
+        android:id="@+id/btnAddWords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View wordlist"
+        android:id="@+id/btnViewWordlist"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnAddWords"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shuffle words"
+        android:id="@+id/btnShuffleWords"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnViewWordlist"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shuffle translations"
+        android:id="@+id/btnShuffleTranslations"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnShuffleWords"/>
+
+</RelativeLayout>
