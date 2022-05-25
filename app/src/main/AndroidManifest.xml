@@ -25,10 +25,18 @@
         <activity android:name=".ViewCategoryActivity"/>
         <activity android:name=".AddWordActivity"/>
         <activity android:name=".AddTranslationActivity"/>
-        <activity android:name=".QuizShuffleActivity"/>
+
+        <activity
+            android:name=".QuizShuffleWordsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
         <activity android:name=".ViewWordsActivity"/>
         <activity android:name=".AddCategoryActivity"/>
         <activity android:name=".WordlistActivity"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -2,6 +2,7 @@ package com.vinchy.easygerman;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +17,15 @@ public class AddCategoryActivity extends AppCompatActivity {
     DatabaseHelper dbHelper;
 
     @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_ENTER:
+
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_category);
@@ -26,6 +36,8 @@ public class AddCategoryActivity extends AppCompatActivity {
         newCategoryName = findViewById(R.id.txtNewCategoryName);
         addCategoryButton = findViewById(R.id.btnAddCategory);
         dbHelper = new DatabaseHelper(this);
+
+
         // ---
 
         addCategoryButton.setOnClickListener(new View.OnClickListener() {

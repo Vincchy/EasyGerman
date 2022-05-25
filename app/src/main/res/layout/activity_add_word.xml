@@ -16,7 +16,8 @@
             android:hint="New word"
             android:minWidth="80pt"
             android:layout_toRightOf="@+id/spinnerArticle"
-            android:layout_marginLeft="40dp">
+            android:layout_marginLeft="40dp"
+            android:inputType="textShortMessage">
         </EditText>
 
         <Spinner

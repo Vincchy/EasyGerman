@@ -13,7 +13,8 @@
             android:layout_height="50dp"
             android:id="@+id/editTxtNewTranslation"
             android:hint="Translation"
-            android:minWidth="80pt">
+            android:minWidth="80pt"
+            android:inputType="textShortMessage">
         </EditText>
 
         <Button

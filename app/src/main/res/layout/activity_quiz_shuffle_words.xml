@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/vf_word_type">
+
+        <!-- Noun layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_noun">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Article"
+                    android:id="@+id/tv_article"
+                    android:textSize="24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Noun"
+                    android:id="@+id/tv_word"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!-- Verb / adjective layout -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_other">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Other"/>
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+    <EditText
+        android:id="@+id/et_translation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vf_word_type"
+        android:layout_centerHorizontal="true"
+        android:minWidth="100dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Check"
+        android:textSize="24dp"
+        android:id="@+id/btn_check"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrong answer"
+        android:id="@+id/tv_feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_check"
+        android:textColor="#ff0000"
+        android:visibility="gone"/>
+
+</RelativeLayout>

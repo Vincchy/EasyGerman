@@ -57,5 +57,13 @@ public class ViewCategoryActivity extends AppCompatActivity {
             }
         });
 
+        shuffleWordsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ViewCategoryActivity.this, QuizShuffleWordsActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
