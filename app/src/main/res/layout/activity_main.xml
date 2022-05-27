@@ -11,22 +11,27 @@
         android:layout_width="250dp"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnCreateCategoryActivity"
+        android:padding="10dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="30dp"/>
+        android:layout_margin="30dp"
+        android:text="Add category"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:textColor="#ffffff"
+        android:drawableLeft="@drawable/ic_baseline_add_24"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnDeleteDatabase"
         android:layout_alignParentBottom="true"
-        android:layout_margin="30dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="@color/design_default_color_error"/>
 
     <TextView
